@@ -6,7 +6,13 @@ class Anagram
   end
   
   def match(word_array)
-    
+    if word_array.length == 0 
+      return []
+    elsif word_array.length == 1
+       if sort_word(@gram) == sort_word(word_array[0])
+         return word_array[0]
+       end
+    else
     word_array.each {|element| 
       sorted1 = sort_word(element)
       sorted2 = sort_word(@gram)
@@ -14,11 +20,13 @@ class Anagram
          return element
        end
     }
-    return []
+  end
+    
   end
   
   def sort_word(word)
-    word.split.sort
+    word.split()
+    word.sort()
   end
 end
 
