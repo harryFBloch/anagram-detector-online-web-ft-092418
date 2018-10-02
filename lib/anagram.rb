@@ -13,6 +13,7 @@ class Anagram
          return element
        end
     }
+    return []
   end
   
   def sort_word(word)
