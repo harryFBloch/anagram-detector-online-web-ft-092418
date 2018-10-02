@@ -30,7 +30,6 @@ class Anagram
   def sort_word(word)
    a = word.split("")
    a.sort()
-   binding.pry
   end
   
 end
