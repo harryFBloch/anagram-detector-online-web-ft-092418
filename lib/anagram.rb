@@ -9,7 +9,9 @@ class Anagram
     word_array.each {|element| 
       sorted1 = element.sort()
       sorted2 = @gram.sort()
-      do return element if sorted1 == sorted2
+       if sorted1 == sorted2
+         return element
+       end
     }
   end
 end
