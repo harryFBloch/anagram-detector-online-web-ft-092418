@@ -15,7 +15,6 @@ class Anagram
          binding.pry
          return word_array[0]
        end
-       
     else
     word_array.each {|element| 
       sorted1 = sort_word(element)
@@ -31,6 +30,7 @@ class Anagram
   def sort_word(word)
    a = word.split()
    a.sort()
+   binding.pry
   end
   
 end
