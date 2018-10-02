@@ -28,7 +28,7 @@ class Anagram
   end
   
   def sort_word(word)
-   a = word.split()
+   a = word.split("")
    a.sort()
    binding.pry
   end
