@@ -8,23 +8,21 @@ class Anagram
   end
   
   def match(word_array)
+    return_array = []
     if word_array.length == 0 
-      return []
+      
     elsif word_array.length == 1
        if sort_word(@gram) == sort_word(word_array[0])
-         binding.pry
-         return word_array[0]
+         return_array << word_array[0]
        end
     else
     word_array.each {|element| 
-      sorted1 = sort_word(element)
-      sorted2 = sort_word(@gram)
-       if sorted1 == sorted2
-         return element
+       if sort_word(element) == sort_word(@gram)
+         return_array << element
        end
     }
     end
-    return []  
+    return_array  
   end
   
   def sort_word(word)
