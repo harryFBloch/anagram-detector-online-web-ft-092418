@@ -26,8 +26,8 @@ class Anagram
   end
   
   def sort_word(word)
-    word.split()
-    word.sort()
+   a = word.split()
+   a.sort()
   end
 end
 
