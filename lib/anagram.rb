@@ -7,11 +7,16 @@ class Anagram
   
   def match(word_array)
     word_array.each {|element| 
-      sorted1 = element.sort()
-      sorted2 = @gram.sort()
+      sorted1 = sort_word(element)
+      sorted2 = sort_word(@gram)
        if sorted1 == sorted2
          return element
        end
     }
   end
+  
+  def sort_word(word)
+    word.split.sort
+  end
 end
+
