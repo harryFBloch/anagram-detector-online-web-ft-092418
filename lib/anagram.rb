@@ -32,6 +32,5 @@ class Anagram
   
 end
 
-a = Anagram.new()
 
 
