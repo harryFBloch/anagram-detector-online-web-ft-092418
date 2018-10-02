@@ -23,7 +23,7 @@ class Anagram
          return element
        end
     }
-  end
+    end
     return []  
   end
   
