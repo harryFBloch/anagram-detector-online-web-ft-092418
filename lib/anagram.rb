@@ -22,7 +22,7 @@ class Anagram
        end
     }
   end
-    
+    return []  
   end
   
   def sort_word(word)
