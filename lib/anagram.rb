@@ -29,6 +29,7 @@ class Anagram
    a = word.split()
    a.sort()
   end
+  
 end
 
 a = Anagram.new()
