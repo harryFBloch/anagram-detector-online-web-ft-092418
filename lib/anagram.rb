@@ -1,6 +1,7 @@
 # Your code goes here!
 class Anagram
   attr_accessor :gram
+  
   def initialize(gram)
     @gram = gram
   end
@@ -30,5 +31,6 @@ class Anagram
   end
 end
 
+a = Anagram.new()
 
 
