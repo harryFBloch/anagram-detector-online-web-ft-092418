@@ -6,6 +6,7 @@ class Anagram
   end
   
   def match(word_array)
+    
     word_array.each {|element| 
       sorted1 = sort_word(element)
       sorted2 = sort_word(@gram)
