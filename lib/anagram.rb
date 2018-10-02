@@ -1,4 +1,5 @@
 # Your code goes here!
+require 'pry'
 class Anagram
   attr_accessor :gram
   
@@ -13,6 +14,7 @@ class Anagram
        if sort_word(@gram) == sort_word(word_array[0])
          return word_array[0]
        end
+       binding.pry
     else
     word_array.each {|element| 
       sorted1 = sort_word(element)
