@@ -12,9 +12,10 @@ class Anagram
       return []
     elsif word_array.length == 1
        if sort_word(@gram) == sort_word(word_array[0])
+         binding.pry
          return word_array[0]
        end
-       binding.pry
+       
     else
     word_array.each {|element| 
       sorted1 = sort_word(element)
